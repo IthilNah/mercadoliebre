@@ -1,3 +1,36 @@
+.login-container {
+    width: 70%;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 5px 10px #888888;
+    margin: 20px 0px;
+}
+
+.login-container_button:hover {
+    background-color: white;
+  }
+
+.login-container_button {
+    background-color: #fa8074;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    border-width: 0px;
+}
+
+.login-container_form {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -25,6 +58,12 @@ header {
     text-align: left;
 }
 
+main {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
 .burger-menu {
     text-align: center;
 }
@@ -35,18 +74,6 @@ header {
 
 .home-banner {
     width: 100%;
-}
-
-.precio {
-    font-size: 18px;
-}
-
-.descuentos {
-    font-size: 16px;
-}
-
-.descripcion {
-    font-size: 16px;
 }
 
 .footer-copyright {
@@ -80,24 +107,6 @@ header {
 p {
     font-size: 12px;
 }   
-
-.product-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.product-container_item {
-    width: 80%;
-}
-
-.product-image {
-    width: 80%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 h2 {
     font-size: 24px;
@@ -183,8 +192,18 @@ h2 {
         width: 22%;
     }
 
+    .login-container {
+        width: 50%;
+    }
+
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    .login-container {
+        width: 30%;
+    }
+
+}
 
 @media (min-width: 1400px) {}

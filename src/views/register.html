@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/29b5584878.js" crossorigin="anonymous"></script>
+    <title>MercadoLiebre - Register
+    </title>
+</head>
+<body>
+    <!-- Banner -->
+    <img src="/images/logo-mercado-liebre.svg" alt="Logo MercadoLiebre" width="180">
+
+    <!-- Header -->
+    <div>
+        <label for="site-search"></label>
+        <input type="search" id="site-search" name="q"placeholder="Buscar productos, marcas">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <p class="header-buy">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        Compra en cuotas y sin tarjeta de credito
+    </p>
+
+    <!-- Navbar -->
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><a href='#oferta'>Ofertas</a></li>
+                <li>Tiendas oficiales</li>
+                <li>Vender</li>
+                <li>Ayuda</li>
+                <br>
+                <li>Crea tu cuenta <i class="fa-solid fa-id-card"></i> </li>
+                <li>Ingresa <i class="fa-solid fa-arrow-right-to-bracket"></i> </li>
+                <li>Mis compras <i class="fa-solid fa-basket-shopping"></i> </li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+</header>
+</body>
+    <form>
+        <label for="name">Nombre del producto:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="price">Precio:</label>
+        <input type="text" id="price" name="price"><br>
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria">
+            <option value="hogar">Hogar</option>
+            <option value="electronica">Electronica</option>
+            <option value="alimentos">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+        </textarea><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="submit" value="Guardar">
+        <input type="reset" value="Borrar">
+    </form>
+    
+</html>
