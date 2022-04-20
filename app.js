@@ -4,9 +4,8 @@ const app = express();
 
 app.use(express.static("public"));
 
-app.listen(process.ENV.port || 3000, function() {
-    console.log("Servidor iniciado")
-})
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'src/views/index.html'));

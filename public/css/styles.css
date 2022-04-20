@@ -19,6 +19,20 @@ header {
     display: none;
 }
 
+.navbar-left {
+    display: flex;
+    width: 40%;
+    height: auto;
+    justify-content: space-between;
+}
+
+.navbar-right {
+    display: flex;
+    width: 40%;
+    height: auto;
+    justify-content: space-between;
+}
+
 .navbar-links {
     list-style: none;
     font-size: 12px;
@@ -188,6 +202,7 @@ p {
 
 .product-container_item:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    transform: scale(1.05);
   }
 
 .product-image {
@@ -232,6 +247,7 @@ h2 {
     font-size: 18px;
     width: 100%;
     height: 20px;
+    border-radius: 5px;
 }
 
 
@@ -263,7 +279,7 @@ h2 {
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
     }   
 
     .footer-item {
@@ -288,7 +304,7 @@ h2 {
     }
 
     .searchbar {
-        font-size: 18px;
+        font-size: 16px;
         width: 100%;
         height: 40px;
     }
