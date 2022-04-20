@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.static("public"));
 
-app.listen(3001, () => {
+app.listen(process.ENV.port || 3000, function() {
     console.log("Servidor iniciado")
 })
 
