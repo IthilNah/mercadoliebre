@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -15,8 +15,10 @@
     <header>
         <div class="upper-header">
             <!-- Banner -->
-            <img src="/images/logo-mercado-liebre.svg" alt="Logo MercadoLiebre" class="upper-header_logo">
-            <div>
+            <a href="/" class="upper-header_logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo MercadoLiebre">
+            </a>
+            <div class="upper-header_search">
                 <label for="site-search"></label>
                 <input type="search" id="site-search" name="q"placeholder="Buscar productos, marcas" class="searchbar">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -34,7 +36,7 @@
                     <p>Tiendas oficiales</p>
                     <p>Vender</p>
                     <p>Ayuda</p>
-                    <p>Crea tu cuenta <i class="fa-solid fa-id-card"></i></p>
+                    <p><a href="/register">Crea tu cuenta <i class="fa-solid fa-id-card"></i></a></p>
                     <p><a href="/login">Ingresa <i class="fa-solid fa-arrow-right-to-bracket"></i></a></p>
                     <p>Mis compras <i class="fa-solid fa-basket-shopping"></i></p>
                 </ul>
@@ -44,15 +46,17 @@
             </div>
     </header>
 <main>
-    <div class="login-container">
-        <h2>Log In</h2>
-        <form>
-            <label for="username">Username:</label><br>
-            <input type="text" id="user" name="user" class="login-container_form"><br>
-            <label for="password">Password:</label><br>
-            <input type="text" id="password" name="password" class="login-container_form"><br>
-            <input type="submit" value="Log In" class="login-container_button">
-        </form>
+    <div class="main-container">
+        <div class="login-container">
+            <h2>Log In</h2>
+            <form>
+                <label for="username">Username:</label><br>
+                <input type="text" id="user" name="user" class="login-container_form"><br>
+                <label for="password">Password:</label><br>
+                <input type="text" id="password" name="password" class="login-container_form"><br>
+                <input type="submit" value="Log In" class="login-container_button">
+            </form>
+        </div>
     </div>
 </main>
 <footer>

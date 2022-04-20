@@ -25,7 +25,28 @@ header {
     text-align: left;
 }
 
+main {
+    padding-bottom: 30px;
+    background-color: #efefef;
+}
+
+.main-container {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
 .burger-menu {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.burger-menu i{
+    border-radius: 5px;
+    color: white;
+    background-color: #1259c3;
+    padding: 16px 7px;
+    cursor: pointer;
     text-align: center;
 }
 
@@ -38,11 +59,12 @@ header {
 }
 
 .precio {
-    font-size: 18px;
+    width: 60%;
 }
 
 .descuentos {
-    font-size: 16px;
+    font-size: 14px;
+    width: 40%;
 }
 
 .descripcion {
@@ -72,9 +94,42 @@ header {
 }
 
 .blue-item {
-    color: #03264C;
+    color: #1259c3;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.login-container {
+    width: 70%;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 5px 10px #888888;
+    margin: 20px 0px;
+}
+
+.login-container_button:hover {
+    background-color: white;
+  }
+
+.login-container_button {
+    background-color: #fa8074;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    border-width: 0px;
+}
+
+.login-container_form {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
 }
 
 p {
@@ -86,11 +141,54 @@ p {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-container_item {
+    background-color: #fff;
+    margin-bottom: 15px;
     width: 80%;
 }
+
+.product-container_info {
+    border-top: 1px solid rgba(51,51,51,.1);
+    color: rgb(51, 51, 51);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 16px;
+    position: relative;
+}
+
+.product-container_info > h3 {
+    color: #666;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.product-container_info i,
+.descuentos{
+    color: #39b54a;
+}
+
+.product-container_info i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.product-container_item:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
 
 .product-image {
     width: 80%;
@@ -112,21 +210,28 @@ h2 {
 
 .upper-header_buy {
     text-align: center;
+    margin-right: 20px;
 }
 
 .upper-header_logo {
-    width: 40%;
-    height: auto;
+    padding: 10px;
+    width: 20%;
+    max-width: 200px;
 }
 
 .upper-header_search {
+    display: flex;
+    align-items: center;
     width: 50%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .searchbar {
-    width: 80%;
-    height: auto;
+    font-size: 18px;
+    width: 100%;
+    height: 20px;
 }
 
 
@@ -150,11 +255,6 @@ h2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .upper-header_logo {
-        width: 30%;
-        height: auto;
     }
 
     .burger-menu {
@@ -183,8 +283,23 @@ h2 {
         width: 22%;
     }
 
+    .login-container {
+        width: 50%;
+    }
+
+    .searchbar {
+        font-size: 18px;
+        width: 100%;
+        height: 40px;
+    }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    .login-container {
+        width: 30%;
+    }
+
+}
 
 @media (min-width: 1400px) {}
